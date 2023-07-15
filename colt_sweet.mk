@@ -21,7 +21,7 @@ COLT_BUILD_TYPE := UNOFFICIAL
 WITH_GAPPS := true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := cherish_sweet
+PRODUCT_NAME := colt_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro

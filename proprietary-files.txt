@@ -34,11 +34,11 @@ vendor/firmware/osc_rtp_24K_5s.bin
 
 # Audio HAL
 -vendor/lib/hw/audio.primary.sm6150.so
--vendor/lib/libadm.so
 -vendor/lib/libaudio_log_utils.so
 -vendor/lib/libaudioparsers.so
 -vendor/lib/libaudioroute_ext.so
 -vendor/lib/libqtigef.so
+-vendor/lib/vndk/libxlog.so
 
 # Audio extensions
 -vendor/lib/btaudio_offload_if.so
@@ -82,7 +82,6 @@ vendor/etc/init/init.batterysecret.rc
 -vendor/lib64/libdualcam_video_optical_zoom.so
 -vendor/lib64/libft2vendor.so
 -vendor/lib64/libhta.so
--vendor/lib64/libhta_hexagon_runtime.so
 -vendor/lib64/libhvx_interface.so
 -vendor/lib64/libmiai_portraitsupernight.so
 -vendor/lib64/libmialgo_fs.so
@@ -232,8 +231,8 @@ vendor/etc/camera/watermark_font_2300_3199.dat
 
 # Camera face detection
 vendor/etc/camera/megviifacepp_0_5_2_model:vendor/etc/camera/facedetectpp_0_5_2_model
--vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
 -vendor/lib64/libMegviiFacepp-0.5.2.so:vendor/lib64/libFaceDetectpp-0.5.2.so
+-vendor/lib64/libmegface.so:vendor/lib64/libfacedet.so
 
 # Camera-firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -278,6 +277,16 @@ vendor/lib64/camera/fdconfigvideolite.bin
 vendor/lib64/camera/com.qti.tuned.sweet_ofilm_s5kgw3_wide.bin|727410454921cbf6d56837ebf5c930fb948d7f15
 vendor/lib64/camera/com.qti.tuned.sweet_sunny_s5kgw3_wide.bin|34718fcf0dd5d3d30e383e02824145204772676d
 
+# Display
+vendor/lib64/hw/hwcomposer.sm6150.so
+vendor/lib64/libclient2slpi.notifier.so
+vendor/lib64/libsdedrm.so
+vendor/lib64/libsdmcore.so
+
+# Display Feature
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so;MODULE=vendor.xiaomi.hardware.displayfeature@1.0_vendor
+
 # DRM
 -vendor/lib64/liboemcrypto.so
 
@@ -312,14 +321,12 @@ vendor/firmware/a630_sqe.fw
 -vendor/bin/sensors.qti
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
--vendor/lib64/libsensorcal.so
 -vendor/lib64/libsensorslog.so
 -vendor/lib64/libsns_fastRPC_util.so
 -vendor/lib64/libsns_low_lat_stream_stub.so
 -vendor/lib64/libsnsapi.so
 -vendor/lib64/libsnsdiaglog.so
 -vendor/lib64/libssc.so
--vendor/lib64/libssc_default_listener.so
 -vendor/lib64/libssccalapi.so
 -vendor/lib64/sensors.ssc.so
 -vendor/lib64/sensors.touch.so
@@ -370,6 +377,16 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
 
+# Sensor Service
+vendor/bin/hw/vendor.xiaomi.hardware.citsensorservice@1.1-service
+vendor/etc/init/vendor.xiaomi.hardware.citsensorservice@1.1-service.rc
+vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
+vendor/lib64/libnanopb.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0_vendor.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1_vendor.so
+
 # Sensors Ultrasound
 vendor/etc/elliptic_sensor.xml
 -vendor/lib64/libnotifyaudiohal.so
@@ -396,3 +413,117 @@ vendor/etc/thermal-video.conf
 vendor/etc/thermal-youtube.conf
 vendor/etc/thermald-devices.conf
 -vendor/lib64/libthermalclient.so
+
+# Vibrator
+vendor/firmware/AcousticGuitar_RTP.bin
+vendor/firmware/Atlantis_RTP.bin
+vendor/firmware/Bottle_RTP.bin
+vendor/firmware/Bubble_RTP.bin
+vendor/firmware/Bullfrog_RTP.bin
+vendor/firmware/Burst_RTP.bin
+vendor/firmware/Candy_RTP.bin
+vendor/firmware/Carousel_RTP.bin
+vendor/firmware/Celesta_RTP.bin
+vendor/firmware/Charge_Wire_RTP.bin
+vendor/firmware/Charge_Wireless_RTP.bin
+vendor/firmware/Childhood_RTP.bin
+vendor/firmware/Chirp_RTP.bin
+vendor/firmware/Clank_RTP.bin
+vendor/firmware/Conf_MultipleTest.ini
+vendor/firmware/Country_RTP.bin
+vendor/firmware/Cowboy_RTP.bin
+vendor/firmware/Crystal_RTP.bin
+vendor/firmware/DigitalUniverse_RTP.bin
+vendor/firmware/FOD_Motion1_RTP.bin
+vendor/firmware/FOD_Motion2_RTP.bin
+vendor/firmware/FOD_Motion3_RTP.bin
+vendor/firmware/FOD_Motion4_RTP.bin
+vendor/firmware/FOD_Motion_Aurora_RTP.bin
+vendor/firmware/FOD_Motion_Planet_RTP.bin
+vendor/firmware/FaceID_Wrong1_RTP.bin
+vendor/firmware/FaceID_Wrong2_RTP.bin
+vendor/firmware/FadeIn_RTP.bin
+vendor/firmware/FadeOut_RTP.bin
+vendor/firmware/Fairyland_RTP.bin
+vendor/firmware/Fantasy_RTP.bin
+vendor/firmware/Field_Trip_RTP.bin
+vendor/firmware/Flute_RTP.bin
+vendor/firmware/Fresh_RTP.bin
+vendor/firmware/Frog_RTP.bin
+vendor/firmware/Gesture_UpHold_RTP.bin
+vendor/firmware/Gesture_UpSlide_RTP.bin
+vendor/firmware/Glee_RTP.bin
+vendor/firmware/Guitar_RTP.bin
+vendor/firmware/Harp_RTP.bin
+vendor/firmware/Ice_Latte_RTP.bin
+vendor/firmware/IncomingMessage_RTP.bin
+vendor/firmware/Kung_Fu_RTP.bin
+vendor/firmware/Lollipop_RTP.bin
+vendor/firmware/MIX_RTP.bin
+vendor/firmware/MessageSent_RTP.bin
+vendor/firmware/MiClassicRemix_RTP.bin
+vendor/firmware/MiHouse_RTP.bin
+vendor/firmware/MiJazz_RTP.bin
+vendor/firmware/MiMix2_RTP.bin
+vendor/firmware/MiRemix_RTP.bin
+vendor/firmware/Mi_RTP.bin
+vendor/firmware/Moment_RTP.bin
+vendor/firmware/Mountain_Spring_RTP.bin
+vendor/firmware/NFC_card_rtp.bin
+vendor/firmware/NFC_card_slow_rtp.bin
+vendor/firmware/NotificationXylophone_RTP.bin
+vendor/firmware/Orange_RTP.bin
+vendor/firmware/Potion_RTP.bin
+vendor/firmware/Radar_RTP.bin
+vendor/firmware/Reveries_RTP.bin
+vendor/firmware/Space_Age_RTP.bin
+vendor/firmware/Spring_RTP.bin
+vendor/firmware/Swoosh_RTP.bin
+vendor/firmware/ToyRobot_RTP.bin
+vendor/firmware/Unlock_Failed_RTP.bin
+vendor/firmware/bandage_RTP.bin
+vendor/firmware/crawl_RTP.bin
+vendor/firmware/door_open_RTP.bin
+vendor/firmware/drv2604.bin
+vendor/firmware/firearms_akm_RTP.bin
+vendor/firmware/firearms_awm_RTP.bin
+vendor/firmware/firearms_dp28_RTP.bin
+vendor/firmware/firearms_m16a4_RTP.bin
+vendor/firmware/firearms_mini14_RTP.bin
+vendor/firmware/firearms_p18c_RTP.bin
+vendor/firmware/firearms_qbz_RTP.bin
+vendor/firmware/firearms_s1897_RTP.bin
+vendor/firmware/firearms_ump9_RTP.bin
+vendor/firmware/firearms_vss_RTP.bin
+vendor/firmware/grenade_RTP.bin
+vendor/firmware/grenade_explosion_RTP.bin
+vendor/firmware/launcher_edit_rtp.bin
+vendor/firmware/launcher_icon_selection_rtp.bin
+vendor/firmware/lockscreen_camera_entry_rtp.bin
+vendor/firmware/magazine_quick_RTP.bin
+vendor/firmware/new_iconfolder_rtp.bin
+vendor/firmware/notification_cleanall_rtp.bin
+vendor/firmware/notification_remove_rtp.bin
+vendor/firmware/notification_setting_close_rtp.bin
+vendor/firmware/offline_countdown_RTP.bin
+vendor/firmware/osc_rtp_24K_5s.bin
+vendor/firmware/pan_RTP.bin
+vendor/firmware/punch_RTP.bin
+vendor/firmware/scene_bomb_RTP.bin
+vendor/firmware/scene_bomb_injury_RTP.bin
+vendor/firmware/scene_closeparachute_RTP.bin
+vendor/firmware/scene_getshot_RTP.bin
+vendor/firmware/scene_jump_RTP.bin
+vendor/firmware/scene_openparachute_RTP.bin
+vendor/firmware/scene_step_RTP.bin
+vendor/firmware/scope_off_RTP.bin
+vendor/firmware/scope_on_RTP.bin
+vendor/firmware/screenshot_rtp.bin
+vendor/firmware/task_cleanall_rtp.bin
+vendor/firmware/uninstall_animation_rtp.bin
+vendor/firmware/uninstall_dialog_rtp.bin
+vendor/firmware/vehicle_buggy_RTP.bin
+vendor/firmware/vehicle_collision_RTP.bin
+vendor/firmware/vehicle_dacia_RTP.bin
+vendor/firmware/vehicle_moto_RTP.bin
+vendor/firmware/vehicle_plane_RTP.bin
