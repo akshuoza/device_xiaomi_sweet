@@ -5,11 +5,11 @@ git clone https://github.com/NutellaSimpDev/device_xiaomi_sm6150-common.git -b c
 
 echo 'Cloning Vendor tree [2/5]'
 # Device Vendor Tree
-git clone https://github.com/aosp-playground/proprietary_vendor_xiaomi_sweet.git -b thirteen vendor/xiaomi/sweet
+git clone https://github.com/NutellaSimpDev/vendor_xiaomi_sweet.git -b thirteen vendor/xiaomi/sweet
 
 echo 'Cloning Common Vendor tree [3/5]'
 # Common Vendor Tree
-git clone https://github.com/aosp-playground/proprietary_vendor_xiaomi_sm6150-common.git -b thirteen vendor/xiaomi/sm6150-common
+git clone https://github.com/NutellaSimpDev/vendor_xiaomi_sm6150-common.git -b thirteen vendor/xiaomi/sm6150-common
 
 echo 'Cloning Kernel tree [4/5]'
 # Kernel Tree
